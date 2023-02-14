@@ -18,6 +18,7 @@ pagestyle: empty
 `;
     output += generateHeader(raw.name, raw.email, raw.phone, raw.title, raw.location, raw.links);
     output += generateEducation(raw.education);
+    output += generateWorkExp(raw.workexp);
     console.log(output);
     //write to test.md
     fs.writeFileSync('test.md', output, 'utf8');
@@ -66,7 +67,33 @@ function generateEducation(education) {
     for (var i = 0; i < education.length; i++) {
         output += `| ${education[i].name} | ${education[i].year} | ${education[i].institute} | ${education[i].score}|\n`;
     }
-    output += '\n \\vspace{-4mm}\n';
+    output += '\n \\vspace{-4mm}\n\n';
+    return output;
+}
+
+function generateWorkExp(workexp) {
+    var output = `## WORK EXPERIENCE\n\n---\n\n`;
+    for (var i = 0; i < workexp.length; i++) {
+        var techstack = generateTechStack(workexp[i].techstack);
+        output += `### ***${workexp[i].role}***, ${workexp[i].company}, ${workexp[i].location} ${techstack} \\Date{${workexp[i].start} - ${workexp[i].end}}\n\n`;
+        for (var j = 0; j < workexp[i].points.length; j++) {
+            output += `- ${workexp[i].points[j]}\n`;
+        }
+        output += '\n';
+    }
+    return output;
+}
+
+
+
+function generateTechStack(techStack) {
+    if (techStack == null || techStack == undefined) return "";
+    var output = "- \\textcolor{gray}{";
+    for (var i = 0; i < techStack.length - 1; i++) {
+        output += `${techStack[i]} | `;
+    }
+    output += `${techStack[techStack.length - 1]}`;
+    output += "}";
     return output;
 }
 main();
