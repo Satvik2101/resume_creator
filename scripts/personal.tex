@@ -1,0 +1,27 @@
+\usepackage{float}
+\usepackage{setspace}
+% \setstretch{0.9}
+
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+
+\let\OldRule\rule
+\renewcommand{\rule}[2]{\vspace{-4mm} \OldRule{\linewidth}{#2}}
+
+
+\let\OldSubsection\subsection
+\renewcommand{\subsection}[1]{\vspace{-2mm} \OldSubsection{\normalsize{\textbf{#1}}}}
+
+\let\OldSubsubsection\subsubsection
+\renewcommand{\subsubsection}[1]{\vspace{-3mm} \OldSubsubsection{#1}}
+
+\newcommand\Date[1]{\hfill \small \textcolor{gray}{\textmd{#1}}}
+
+% \titlespacing{\section}{0pt}{\parskip}{-\parskip}
+% \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+% \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}

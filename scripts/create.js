@@ -23,9 +23,8 @@ pagestyle: empty
     output += generateAchievements(raw.achievements);
     output += generateSkills(raw.skills);
     output += generatePors(raw.pors);
-    console.log(output);
-    //write to test.md
-    fs.writeFileSync('test.md', output, 'utf8');
+
+    fs.writeFileSync('resume.md', output, 'utf8');
 }
 
 function generateHeader(name, email, phone, title, location, links) {
@@ -76,7 +75,7 @@ function generateEducation(education) {
 function generateWorkExp(workexp) {
     var output = `## WORK EXPERIENCE\n\n---\n\n`;
     for (var i = 0; i < workexp.length; i++) {
-        var techstack = generateTechStack(workexp[i].techstack);
+        var techstack = generateTechStack(workexp[i].techstack, false, true);
         output += `### ***${workexp[i].role}***, ${workexp[i].company}, ${workexp[i].location} ${techstack} \\Date{${workexp[i].start} - ${workexp[i].end}}\n\n`;
         output += generatePoints(workexp[i].points);
         output += '\n';
@@ -87,7 +86,7 @@ function generateWorkExp(workexp) {
 function generateProject(projects) {
     var output = `## PROJECTS\n\n---\n\n`;
     for (var i = 0; i < projects.length; i++) {
-        var techstack = generateTechStack(projects[i].techstack, true);
+        var techstack = generateTechStack(projects[i].techstack, true, true);
         var links = generateLinks(projects[i].links);
         var name;
         if (projects[i].product == null) {
