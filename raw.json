@@ -1,0 +1,160 @@
+{
+  "name": "Arden Cosby",
+  "title": "Software Developer",
+  "location": "New Delhi",
+  "email": "arden@cosby.com",
+  "phone": "+91 9999999999",
+  "links": [
+    {
+      "name": "Github",
+      "url": "github.com/ardencosby"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "linkedin.com/ardencosby"
+    },
+    {
+      "name": "OtherLink",
+      "url": "otherlink.com/ardencosby"
+    }
+  ],
+  "education": [
+    {
+      "name": "B.Tech (Computer Engineering)",
+      "institute": "Delhi Technological University",
+      "year": "2020 - 2024",
+      "score": "9.5 GPA"
+    },
+    {
+      "name": "AISSCE/CBSE (Class XII)",
+      "institute": "Really Good Public School",
+      "year": "2020",
+      "score": "95%"
+    },
+    {
+      "name": "AISSCE/CBSE (Class X)",
+      "institute": "Really Good Public School",
+      "year": "2018",
+      "score": "95%"
+    }
+  ],
+  "workexp": [
+    {
+      "company": "GoodCmpany",
+      "location": "Delhi",
+      "role": "Software Developer Intern",
+      "start": "June 2022",
+      "end": "August 2022",
+      "points": [
+        "Wrote code for the backend of a web app using Node.js and Express.js",
+        "Wrote code for the frontend of the web app using React.js",
+        "Created a REST API for the app, with endpoints for user authentication, CRUD operations on user data, and other endpoints for the app's functionality."
+      ],
+      "techstack": [
+        "Node.js",
+        "Express.js",
+        "React.js"
+      ]
+    },
+    {
+      "company": "AnotherGoodCompany",
+      "location": "Delhi",
+      "role": "Web Dev Intern",
+      "start": "June 2021",
+      "end": "August 2021",
+      "points": [
+        "Wrote HTML, CSS and JavaScript code for the frontend of a web app.",
+        "Created a REST API for the app in Node.js",
+        "Used MongoDB as the database for the app."
+      ],
+      "techstack": [
+        "Node.js",
+        "MongoDB",
+        "HTML",
+        "CSS"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "My Personal Website",
+      "techstack": [
+        "HTML",
+        "JWT",
+        "REST"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "url": "ardencosby.com"
+        },
+        {
+          "name": "Github",
+          "url": "github.com/ardencosby/website"
+        }
+      ],
+      "points": [
+        "Built a personal website using HTML, CSS and JavaScript",
+        "Used JWT for user authentication",
+        "Created a REST API for the website"
+      ]
+    }
+  ],
+  "achievements": [
+    "Won National Hackathon",
+    "Secured 123 Rank in Informatics Olympiad",
+    "Department Topper in CS101"
+  ],
+  "skills": [
+    [
+      "C++",
+      "Dart",
+      "Java",
+      "JavaScript"
+    ],
+    [
+      "Node.js",
+      "Express.js"
+    ],
+    [
+      "SQL",
+      "MongoDB",
+      "Git"
+    ]
+  ],
+  "pors": [
+    {
+      "name": "Very Cool Society",
+      "role": "Head of Tech Team",
+      "techstack": [
+        "Firebase ",
+        "Firestore",
+        "MongoDB",
+        "Mongoose",
+        "HTML",
+        "CSS"
+      ],
+      "start": "Dec 2021",
+      "end": "Present",
+      "links": [
+        {
+          "name": "Github",
+          "url": "github.com/verycoolsociety"
+        },
+        {
+          "name": "Website",
+          "url": "verycoolsociety.com"
+        },
+        {
+          "name": "Play Store",
+          "url": "playstore.com/app/verycoolsociety"
+        }
+      ],
+      "points": [
+        "Led a team of 5 developers to build a web app for the society using React.js, with Material UI as the UI library.",
+        "Created a REST API for the app, with endpoints for user authentication, CRUD operations on user data, and other endpoints for the app's functionality.",
+        "Created a mobile app for the society using Flutter, with Firebase as the backend."
+      ]
+    }
+  ]
+}
