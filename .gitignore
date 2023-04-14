@@ -9,4 +9,5 @@ resume.md
 Archive
 GPA
 *.sh
+!convert.sh
 *.md
