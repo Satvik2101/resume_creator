@@ -2,7 +2,7 @@
     "name": "Satvik Gupta",
     "title": "Software Developer",
     "location": "New Delhi",
-    "email": "satvik.sli@gmail.com",
+    "email": "me@satvikgupta.com",
     "phone": "",
     "links": [
         {
@@ -45,36 +45,66 @@
     "workexp": [
         {
             "company": "Salesforce",
+            "shortName": "Salesforce",
             "location": "Hyderabad",
             "role": "Software Engineer Intern",
             "start": "May 2023",
             "end": "July 2023",
             "points": [
-                "Contributed to the Workspace Engineering team to design,create and integrate a fault-tolerant, generic, and extensible Notification System. It is used to send messages on Slack to users about events on their workspaces. ",
-                "Utilized Spring Boot and Slack Bolt SDK to create a secure REST API, ensuring seamless communication with Slack.",
-                "Developed a command-line interface (CLI) using Golang and the Cobra library to enable users to trigger notifications on command completion, streamlining their workflow and improving developer efficiency.",
-                "Conducted an in-depth exploration of Temporal, a workflow orchestration system. Leveraged its capabilities to build resumable, recoverable, and fault-tolerant workflows for scheduling notifications with precision and reliability."
+                "Trailblazed a Notification System as part of the Workspace Engineering team.",
+                "Engineered a secure REST API using Spring Boot and Slack Bolt SDK.",
+                "Expanded an existing Golang-based CLI to send terminal-triggered notifications.",
+                "Performed a spike on Temporal,a workflow execution system, utilizing its capabilities to efficiently schedule notifications "
             ],
             "techstack": [
                 "Spring Boot",
                 "Golang",
                 "Temporal"
-            ]
+            ],
+            "hue-degree": 15
         },
         {
             "company": "Coding Ninjas",
+            "shortName": "Coding Ninjas",
             "location": "Delhi",
             "role": "Technical Content Writer Intern",
             "start": "Sept 2022",
             "end": "Dec 2022",
             "points": [
-                "Consistently produced three high-quality blog posts per week, averaging 1.8k words per blog.",
-                "Researched and authored articles covering diverse topics such as test automation tools (Katalon, ReadyAPI), Akamai, cryptography, DSA, Maven, shell scripts, and more.",
-                "Utilized software such as AWS, Postman, and Puppet, facilitating the creation of informative tutorial articles."
-            ]
+                "Explored softwares like AWS, Postman, Maven, and Puppet, turning insights into engaging articles.",
+                "Crafted 36 in-depth pieces, each a captivating dive into software, DSA, Cryptography, Shell Scripts, and beyond.",
+                "Delved hands-on into the software realm (AWS, Puppet, Salt, etc.), transforming experiences into tutorial treasures."
+            ],
+            "techstack": [
+                "AWS",
+                "DSA",
+                "Bash",
+                "Puppet"
+            ],
+            "hue-degree": 185
+        },
+        {
+            "company": "IIT-Delhi",
+            "shortName": "IIT-D",
+            "location": "Delhi",
+            "role": "App Developer Intern",
+            "start": "Dec 2021",
+            "end": "March 2022",
+            "techstack": [
+                "Flutter",
+                "SQLite",
+                "Arduino"
+            ],
+            "points": [
+                "Crafted a standout Flutter app: capturing, storing, showcasing, and exporting ECG data from Arduino hardware.",
+                "Used SQLite for sleek local storage    ",
+                "Teamed up with a PhD researcher, infusing the app with Bluetooth for seamless communication with Arduino-based hardware."
+            ],
+            "hue-degree": 160
         },
         {
             "company": "CRIS, Ministry of Railways",
+            "shortName": "CRIS",
             "location": "Delhi",
             "role": "Flutter Developer Intern",
             "techstack": [
@@ -83,9 +113,11 @@
             "start": "Aug 2021",
             "end": "Oct 2021",
             "points": [
-                "Engineered a robust structural layout to seamlessly support multiple languages within the app. Currently, the app accommodates 2 languages effortlessly, with the potential for further expansion without additional programming efforts.",
-                "Advocated for and actively contributed to the migration of the app to the null-safe version of Flutter, resulting in a 40% reduction in compile time, a 30% decrease in startup time, as well as a noticeable boost in overall performance."
-            ]
+                "Ignited a design shift on one app page, which was immediately adopted across other pages of the app",
+                "Added bilingual support to the app, making the app available in English/Hindi both. The architecture of this is such that you can add multiple languages later without any development effort.",
+                "Spearheaded a Flutter upgrade, cutting compile time by 40% and startup time by 30%,as well as boosting overall performance."
+            ],
+            "hue-degree": 40
         }
     ],
     "projects": [
@@ -109,10 +141,11 @@
                 }
             ],
             "points": [
-                "Led a team of 3 developers and spearheaded the end-to-end development of a Flutter app for DTU-DCE Fraternity Forum.",
-                "Collaborated closely with the backend team to design and implement new API endpoints.",
-                "Developed an intuitive admin panel within the app, empowering administrators to manage and access user data efficiently.",
-                "Successfully launched the app on Play Store and App Store, achieving 100+ downloads and earning a top rating of 5 on both platforms, reflecting the app's exceptional user experience."
+                "Led a dynamic team of 3 in crafting the DTU-DCE Fraternity Forum app using Flutter, connected to a REST API.",
+                "Teamed up with the backend team to design a REST API for the app.",
+                "Enhanced user security with JWT authentication, ensuring tight access and safeguarding user data.",
+                "Provided admins an intuitive control hub within the app, making membership management a breeze.",
+                "Launched on Play Store and App Store, clocking 100+ downloads and snagging a stellar 5-star rating for a top-notch user experience."
             ],
             "image": "./images/projects/dtu_dce_frat.png",
             "image_alt": "Screenshot of the Forum's App"
@@ -172,10 +205,11 @@
                 }
             ],
             "points": [
-                "Led the development of a dynamic mobile app in Flutter and supervised Next.js website development.",
-                "Contributed extensively to backend code using Node.js.",
-                "Configured AWS EC2 server, implemented SSL certificates with Let's Encrypt, and migrated the live website to GCP Compute Engine. Utilized nginx as a reverse proxy for Node.js backend.",
-                "Achieved exceptional user engagement with 400,000 HTTP requests, 8k unique IP addresses, and 1.5k registered users within 20 days. Website sales accounted for 2/3rds of event tickets."
+                "Led dynamic app development in Flutter, creating a seamless cross-platform experience with a responsive Next.js website.",
+                "Contributed significantly to the backend with Node.js, enhancing performance.",
+                "Orchestrated AWS EC2 setup for website hosting, implemented SSL certificates for secure communication, and later scaled performance on GCP Compute Engine.",
+                "Employed nginx as a reverse proxy for routing requests to the Node.js backend.",
+                "Achieved outstanding user engagement in 20 days, attracting 8k unique IP addresses and registering 1.5k users. Notably, 2/3rds of event tickets were sold on the site, highlighting its impactful success."
             ],
             "image": "./images/projects/tedx.png",
             "image_alt": "Screenshot of TEDxDTU's App and Website"
