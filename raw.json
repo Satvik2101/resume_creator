@@ -1,8 +1,8 @@
 {
     "name": "Satvik Gupta",
     "title": "Software Developer",
-    "location": "New Delhi",
-    "email": "satvik.sli@gmail.com",
+    "location": "Hyderabad",
+    "email": "me@satvikgupta.com",
     "phone": "",
     "links": [
         {
@@ -30,14 +30,14 @@
             "score": "9.48 GPA"
         },
         {
-            "name": "AISSCE/CBSE (Class XII)",
-            "institute": "GD Goenka Public School",
+            "name": "CBSE Class XII",
+            "institute": "",
             "year": "2020",
             "score": "95%"
         },
         {
-            "name": "AISSCE/CBSE (Class X)",
-            "institute": "GD Goenka Public School",
+            "name": "CBSE Class X",
+            "institute": "",
             "year": "2018",
             "score": "96%"
         }
@@ -45,36 +45,74 @@
     "workexp": [
         {
             "company": "Salesforce",
+            "shortName": "Salesforce",
+            "location": "Hyderabad",
+            "role": "Associate Member of Technical Staff",
+            "start": "June 2024",
+            "end": "Present",
+            "points": [
+                "Built infra for Salesforce Workspaces — zero-setup cloud dev environments.",
+                "Worked on moving infra from EC2 to K8s-based pods and Spring-based Control Plane to K8s-based controllers.",
+                "IaC: full Terraform migration of dataplane resources.",
+                "Enabled Cursor for 2200 developers, via secure SSH access to Workspaces via opkssh.",
+                "Reduced tech debt, pruned dead code, simplified flows"
+            ],
+            "techstack": [
+                "AWS",
+                "Kubernetes",
+                "Terraform",
+                "IaC",
+                "AI"
+            ],
+            "hue-degree": 15
+        },
+        {
+            "company": "Salesforce",
+            "shortName": "Salesforce",
             "location": "Hyderabad",
             "role": "Software Engineer Intern",
             "start": "May 2023",
             "end": "July 2023",
             "points": [
-                "Contributed to the Workspace Engineering team to design,create and integrate a fault-tolerant, generic, and extensible Notification System. It is used to send messages on Slack to users about events on their workspaces. ",
-                "Utilized Spring Boot and Slack Bolt SDK to create a secure REST API, ensuring seamless communication with Slack.",
-                "Developed a command-line interface (CLI) using Golang and the Cobra library to enable users to trigger notifications on command completion, streamlining their workflow and improving developer efficiency.",
-                "Conducted an in-depth exploration of Temporal, a workflow orchestration system. Leveraged its capabilities to build resumable, recoverable, and fault-tolerant workflows for scheduling notifications with precision and reliability."
+                "Built a notification system for cloud-based development Workspaces.",
+                "Enabled terminal-triggered alerts using Go CLI, Spring Boot and Slack SDK",
+                "Prototyped reliable scheduling with Temporal workflows."
             ],
             "techstack": [
                 "Spring Boot",
                 "Golang",
                 "Temporal"
-            ]
+            ],
+            "hue-degree": 15
         },
         {
             "company": "Coding Ninjas",
+            "shortName": "Coding Ninjas",
             "location": "Delhi",
             "role": "Technical Content Writer Intern",
             "start": "Sept 2022",
             "end": "Dec 2022",
             "points": [
-                "Consistently produced three high-quality blog posts per week, averaging 1.8k words per blog.",
-                "Researched and authored articles covering diverse topics such as test automation tools (Katalon, ReadyAPI), Akamai, cryptography, DSA, Maven, shell scripts, and more.",
-                "Utilized software such as AWS, Postman, and Puppet, facilitating the creation of informative tutorial articles."
-            ]
+                "Wrote 30+ technical guides on AWS, Puppet, Cryptography,etc. ",
+                "Explained complex tools through hands-on walkthroughs."
+            ],
+            "techstack": [
+                "AWS",
+                "DSA",
+                "Bash",
+                "Puppet"
+            ],
+            "links": [
+                {
+                    "name": "List of Articles",
+                    "url": "https://www.satvikgupta.com/coding-ninjas-articles.pdf"
+                }
+            ],
+            "hue-degree": 185
         },
         {
             "company": "CRIS, Ministry of Railways",
+            "shortName": "CRIS",
             "location": "Delhi",
             "role": "Flutter Developer Intern",
             "techstack": [
@@ -83,9 +121,11 @@
             "start": "Aug 2021",
             "end": "Oct 2021",
             "points": [
-                "Engineered a robust structural layout to seamlessly support multiple languages within the app. Currently, the app accommodates 2 languages effortlessly, with the potential for further expansion without additional programming efforts.",
-                "Advocated for and actively contributed to the migration of the app to the null-safe version of Flutter, resulting in a 40% reduction in compile time, a 30% decrease in startup time, as well as a noticeable boost in overall performance."
-            ]
+                "Kicked off design revamp adopted app-wide.",
+                "Architected bilingual (Eng/Hindi) support with future-proof i18n.",
+                "Upgraded Flutter → 40% faster builds, 30% faster launch."
+            ],
+            "hue-degree": 40
         }
     ],
     "projects": [
@@ -100,48 +140,23 @@
             ],
             "links": [
                 {
-                    "name": "App Store",
-                    "url": "https://apps.apple.com/in/app/dtu-dce-fraternity-forum/id1601864796"
+                    "name": "App Store (Archive)",
+                    "url": "https://web.archive.org/web/20220625171104/https://apps.apple.com/in/app/dtu-dce-fraternity-forum/id1601864796?platform=iphone"
                 },
                 {
-                    "name": "Play Store",
-                    "url": "https://play.google.com/store/apps/details?id=org.dtudcefraternity.mobile.app"
+                    "name": "Play Store (Archive)",
+                    "url": "https://web.archive.org/web/20230724015533/https://play.google.com/store/apps/details?id=org.dtudcefraternity.mobile.app"
                 }
             ],
             "points": [
-                "Led a team of 3 developers and spearheaded the end-to-end development of a Flutter app for DTU-DCE Fraternity Forum.",
-                "Collaborated closely with the backend team to design and implement new API endpoints.",
-                "Developed an intuitive admin panel within the app, empowering administrators to manage and access user data efficiently.",
-                "Successfully launched the app on Play Store and App Store, achieving 100+ downloads and earning a top rating of 5 on both platforms, reflecting the app's exceptional user experience."
+                "Led mobile dev for DTU-DCE Fraternity Forum using Flutter.",
+                "Built a secure app with JWT auth + REST backend integration.",
+                "Collaborated with the backend team to build an API spec, and with Forum President and Secretaries as stakeholders.",
+                "Launched on iOS + Android; 100+ downloads, 5 star rating."
             ],
             "image": "./images/projects/dtu_dce_frat.png",
             "image_alt": "Screenshot of the Forum's App"
-        }
-    ],
-    "achievements": [
-        "Secured rank 3989 in TCS CodeVita Season 10, out of 100k + participants",
-        "Secured rank 1421 in Newton School's Grand Coding Contest 2022, out of roughly 12k participants",
-        "Secured All India Rank 5045 in JEE Mains 2020",
-        "Cleared KVPY SA (11th) First Round in 2018"
-    ],
-    "skills": [
-        [
-            "C++",
-            "Dart",
-            "Java",
-            "JavaScript"
-        ],
-        [
-            "Node.js",
-            "Express.js"
-        ],
-        [
-            "SQL",
-            "MongoDB",
-            "Git"
-        ]
-    ],
-    "pors": [
+        },
         {
             "name": "TEDxDTU",
             "product": "Website & App",
@@ -172,13 +187,35 @@
                 }
             ],
             "points": [
-                "Led the development of a dynamic mobile app in Flutter and supervised Next.js website development.",
-                "Contributed extensively to backend code using Node.js.",
-                "Configured AWS EC2 server, implemented SSL certificates with Let's Encrypt, and migrated the live website to GCP Compute Engine. Utilized nginx as a reverse proxy for Node.js backend.",
-                "Achieved exceptional user engagement with 400,000 HTTP requests, 8k unique IP addresses, and 1.5k registered users within 20 days. Website sales accounted for 2/3rds of event tickets."
+                "Built cross-platform app (Flutter) + site (Next.js).",
+                "Built backend infra: EC2 → GCP, NGINX + Node.js, certbot + Let's Encrypt for SSL, moved to Vercel for serverless to reduce costs.",
+                "8k users in 20 days, 2/3rds of tickets sold online."
             ],
             "image": "./images/projects/tedx.png",
             "image_alt": "Screenshot of TEDxDTU's App and Website"
         }
+    ],
+    "achievements": [
+        "Secured rank 3989 in TCS CodeVita Season 10, out of 100k + participants",
+        "Secured rank 1421 in Newton School's Grand Coding Contest 2022, out of roughly 12k participants",
+        "Secured All India Rank 5045 in JEE Mains 2020",
+        "Cleared KVPY SA (11th) First Round in 2018"
+    ],
+    "skills": [
+        [
+            "C++",
+            "Dart",
+            "Java",
+            "JavaScript"
+        ],
+        [
+            "Node.js",
+            "Express.js"
+        ],
+        [
+            "SQL",
+            "MongoDB",
+            "Git"
+        ]
     ]
 }
