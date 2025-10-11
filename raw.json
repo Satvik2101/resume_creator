@@ -47,7 +47,7 @@
             "company": "Salesforce",
             "shortName": "Salesforce",
             "location": "Hyderabad",
-            "role": "Associate Member of Technical Staff",
+            "role": "Associate Member of Technical Staff -> Member of Technical Stuff (Aug 2025)",
             "start": "June 2024",
             "end": "Present",
             "points": [
@@ -99,7 +99,6 @@
             "techstack": [
                 "AWS",
                 "DSA",
-                "Bash",
                 "Puppet"
             ],
             "links": [

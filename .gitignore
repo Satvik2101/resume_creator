@@ -11,3 +11,4 @@ GPA
 *.sh
 !convert.sh
 *.md
+tex2pdf*
