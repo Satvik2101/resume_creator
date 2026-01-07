@@ -86,30 +86,6 @@
             "hue-degree": 15
         },
         {
-            "company": "Coding Ninjas",
-            "shortName": "Coding Ninjas",
-            "location": "Delhi",
-            "role": "Technical Content Writer Intern",
-            "start": "Sept 2022",
-            "end": "Dec 2022",
-            "points": [
-                "Wrote 30+ technical guides on AWS, Puppet, Cryptography,etc. ",
-                "Explained complex tools through hands-on walkthroughs."
-            ],
-            "techstack": [
-                "AWS",
-                "DSA",
-                "Puppet"
-            ],
-            "links": [
-                {
-                    "name": "List of Articles",
-                    "url": "https://www.satvikgupta.com/coding-ninjas-articles.pdf"
-                }
-            ],
-            "hue-degree": 185
-        },
-        {
             "company": "CRIS, Ministry of Railways",
             "shortName": "CRIS",
             "location": "Delhi",
@@ -148,8 +124,7 @@
                 }
             ],
             "points": [
-                "Led mobile dev for DTU-DCE Fraternity Forum using Flutter.",
-                "Built a secure app with JWT auth + REST backend integration.",
+                "Led mobile dev for DTU-DCE Fraternity Forum using Flutter. Built a secure app with JWT auth + REST backend integration.",
                 "Collaborated with the backend team to build an API spec, and with Forum President and Secretaries as stakeholders.",
                 "Launched on iOS + Android; 100+ downloads, 5 star rating."
             ],
@@ -175,14 +150,6 @@
                 {
                     "name": "Github",
                     "url": "https://github.com/TEDxDTU"
-                },
-                {
-                    "name": "Website",
-                    "url": "https://tedxdtu.in/"
-                },
-                {
-                    "name": "Play Store",
-                    "url": "https://play.google.com/store/apps/details?id=in.tedxdtu.flutter_app&pli=1"
                 }
             ],
             "points": [
@@ -192,6 +159,36 @@
             ],
             "image": "./images/projects/tedx.png",
             "image_alt": "Screenshot of TEDxDTU's App and Website"
+        },
+        {
+            "name": "Personal Website & Infra",
+            "techstack": [
+                "AWS",
+                "S3",
+                "Cloudfront",
+                "Github Actions",
+                "Typescript"
+            ],
+            "links": [
+                {
+                    "name": "Website",
+                    "url": "https://www.satvikgupta.com"
+                },
+                {
+                    "name": "Github",
+                    "url": "https://github.com/Satvik2101/Portfolio"
+                },
+                {
+                    "name": "Lucid",
+                    "url": "https://github.com/Satvik2101/Lucid"
+                }
+            ],
+            "points": [
+                "Built a personal website using my own templating engine (Lucid).",
+                "Hosted the website on AWS S3, served via Cloudfront. Cloudflare handles DNS and ACM handles certificates.",
+                "Used Github Actions to deploy the website automatically on push to main branch.",
+                "Setup isolated staging and production environments, and CI/CD pipelines for both."
+            ]
         }
     ],
     "achievements": [
@@ -202,19 +199,28 @@
     ],
     "skills": [
         [
-            "C++",
-            "Dart",
+            "Golang",
+            "Python",
+            "Terraform",
+            "JavaScript/Typescript",
             "Java",
-            "JavaScript"
+            "Bash"
         ],
         [
+            "AWS",
+            "Kubernetes",
+            "Docker",
+            "Kubebuilder",
+            "Spring Boot",
             "Node.js",
-            "Express.js"
+            "Flutter"
         ],
         [
-            "SQL",
-            "MongoDB",
-            "Git"
+            "IaC",
+            "AI",
+            "CI/CD",
+            "Observability",
+            "TDD"
         ]
     ]
 }
