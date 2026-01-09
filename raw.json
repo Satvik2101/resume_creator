@@ -2,7 +2,7 @@
     "name": "Satvik Gupta",
     "title": "Software Developer",
     "location": "Hyderabad",
-    "email": "me@satvikgupta.com",
+    "email": "me@satvikgupta.com | satvik.sli@gmail.com",
     "phone": "",
     "links": [
         {
@@ -51,11 +51,14 @@
             "start": "June 2024",
             "end": "Present",
             "points": [
-                "Built infra for Salesforce Workspaces — zero-setup cloud dev environments.",
-                "Worked on moving infra from EC2 to K8s-based pods and Spring-based Control Plane to K8s-based controllers.",
-                "IaC: full Terraform migration of dataplane resources.",
+                "Developed and engineered infrastructure, services, and applications for Salesforce Workspaces — zero-setup cloud dev environments.",
+                "Drove migration from EC2 instances to K8s-based pods and Spring-based Control Plane to K8s-based controllers",
+                "Designed K8s CRDs and wrote custom reconcilers and controllers for them, using Kubebuilder.",
+                "Standardized provisioning of dataplane resources using Terraform, reducing human error.",
+                "Created dev container features for metrics reporting, periodic maintenance via S6, for better customer experience.",
+                "Reduced Workspace provisioning time from ~18 minutes to 10 minutes (44% improvement)",
                 "Enabled Cursor for 2200 developers, via secure SSH access to Workspaces via opkssh.",
-                "Reduced tech debt, pruned dead code, simplified flows"
+                "Removed tech debt, pruned dead code, refactored legacy code."
             ],
             "techstack": [
                 "AWS",
@@ -74,7 +77,7 @@
             "start": "May 2023",
             "end": "July 2023",
             "points": [
-                "Built a notification system for cloud-based development Workspaces.",
+                "Designed and developed a notification system for cloud-based development Workspaces.",
                 "Enabled terminal-triggered alerts using Go CLI, Spring Boot and Slack SDK",
                 "Prototyped reliable scheduling with Temporal workflows."
             ],
@@ -84,6 +87,30 @@
                 "Temporal"
             ],
             "hue-degree": 15
+        },
+        {
+            "company": "Coding Ninjas",
+            "shortName": "Coding Ninjas",
+            "location": "Delhi",
+            "role": "Technical Content Writer Intern",
+            "start": "Sept 2022",
+            "end": "Dec 2022",
+            "points": [
+                "Wrote 30+ technical guides on AWS, Puppet, Cryptography,etc. ",
+                "Explained complex tools through hands-on walkthroughs."
+            ],
+            "techstack": [
+                "AWS",
+                "DSA",
+                "Puppet"
+            ],
+            "links": [
+                {
+                    "name": "List of Articles",
+                    "url": "https://www.satvikgupta.com/coding-ninjas-articles.pdf"
+                }
+            ],
+            "hue-degree": 185
         },
         {
             "company": "CRIS, Ministry of Railways",
@@ -96,8 +123,7 @@
             "start": "Aug 2021",
             "end": "Oct 2021",
             "points": [
-                "Kicked off design revamp adopted app-wide.",
-                "Architected bilingual (Eng/Hindi) support with future-proof i18n.",
+                "Kicked off design revamp adopted app-wide. Architected bilingual (Eng/Hindi) support with future-proof i18n.",
                 "Upgraded Flutter → 40% faster builds, 30% faster launch."
             ],
             "hue-degree": 40
@@ -124,41 +150,11 @@
                 }
             ],
             "points": [
-                "Led mobile dev for DTU-DCE Fraternity Forum using Flutter. Built a secure app with JWT auth + REST backend integration.",
-                "Collaborated with the backend team to build an API spec, and with Forum President and Secretaries as stakeholders.",
-                "Launched on iOS + Android; 100+ downloads, 5 star rating."
+                "Led mobile dev for DTU-DCE Fraternity Forum using Flutter. Built a secure app with JWT auth + REST backend integration. Collaborated with the backend team to build an API spec, and with Forum President and Secretaries as stakeholders.",
+                "Launched on iOS + Android, with 100+ downloads and 5 star rating."
             ],
             "image": "./images/projects/dtu_dce_frat.png",
             "image_alt": "Screenshot of the Forum's App"
-        },
-        {
-            "name": "TEDxDTU",
-            "product": "Website & App",
-            "role": "Head of Tech Team",
-            "techstack": [
-                "Flutter",
-                "Firebase Auth",
-                "Firestore",
-                "MongoDB",
-                "Mongoose",
-                "AWS",
-                "GCP"
-            ],
-            "start": "Dec 2021",
-            "end": "Present",
-            "links": [
-                {
-                    "name": "Github",
-                    "url": "https://github.com/TEDxDTU"
-                }
-            ],
-            "points": [
-                "Built cross-platform app (Flutter) + site (Next.js).",
-                "Built backend infra: EC2 → GCP, NGINX + Node.js, certbot + Let's Encrypt for SSL, moved to Vercel for serverless to reduce costs.",
-                "8k users in 20 days, 2/3rds of tickets sold online."
-            ],
-            "image": "./images/projects/tedx.png",
-            "image_alt": "Screenshot of TEDxDTU's App and Website"
         },
         {
             "name": "Personal Website & Infra",
@@ -189,6 +185,34 @@
                 "Used Github Actions to deploy the website automatically on push to main branch.",
                 "Setup isolated staging and production environments, and CI/CD pipelines for both."
             ]
+        },
+        {
+            "name": "TEDxDTU",
+            "product": "Website & App",
+            "role": "Head of Tech Team",
+            "techstack": [
+                "Flutter",
+                "Firebase Auth",
+                "Firestore",
+                "MongoDB",
+                "Mongoose",
+                "AWS",
+                "GCP"
+            ],
+            "start": "Dec 2021",
+            "end": "Present",
+            "links": [
+                {
+                    "name": "Github",
+                    "url": "https://github.com/TEDxDTU"
+                }
+            ],
+            "points": [
+                "Designed and deployed backend infra: EC2, then moved to GCP. Used NGINX as a reverse proxy + Node.js backend, certbot + Let's Encrypt for SSL, moved to Vercel for serverless to reduce costs.",
+                "Developed and launched a cross-platform app (Flutter) + site (Next.js). 8k users in 20 days, 2/3rds of tickets sold online."
+            ],
+            "image": "./images/projects/tedx.png",
+            "image_alt": "Screenshot of TEDxDTU's App and Website"
         }
     ],
     "achievements": [

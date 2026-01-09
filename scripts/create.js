@@ -30,6 +30,7 @@ pagestyle: empty
 
 function generateHeader(name, email, phone, title, location, links) {
     var output = `# ${name} \\hfill \\small \\href{mailto:${email}}{${email}} ${phone}`;
+    output += `\\vspace{-2mm}\n\n`;
     output += `\n${title}, ${location} \\hfill{}`;
 
     output += generateLinks(links);
@@ -75,6 +76,7 @@ function generateWorkExp(workexp) {
     var output = `## WORK EXPERIENCE\n\n---\n\n`;
     for (var i = 0; i < workexp.length; i++) {
         var techstack = generateTechStack(workexp[i].techstack, (workexp[i].role.length < 40 && workexp[i].techstack.length > 4));
+        // var links = generateLinks(workexp[i].links);
         console.log(workexp[i].company, (workexp[i].role.length < 40 && workexp[i].techstack.length > 4))
         output += `### ***${workexp[i].role}***`
         if (workexp[i].role.length > 40) {
@@ -101,7 +103,7 @@ function generateProject(projects) {
             name = `${projects[i].name}'s ${projects[i].product}`;
         }
 
-        output += `### ***${name}*** ${links}${techstack}\n\n`;
+        output += `### ***${name}*** ${links}${techstack}\n\n\\vspace{-1mm}\n\n`;
         output += generatePoints(projects[i].points);
         output += '\n';
     }
@@ -133,7 +135,7 @@ function generateSkills(skills) {
 
 function generateTechStack(techStack, newline) {
     if (techStack == null || techStack == undefined) return "";
-    var output = newline ? "\n\n" : "| ";
+    var output = newline ? "\n\n\\vspace{-1mm}\n\n" : "| ";
 
     output += "**\\textcolor{gray}{";
     for (var i = 0; i < techStack.length - 1; i++) {
@@ -158,7 +160,7 @@ function generateLinks(links, end) {
 }
 
 function generatePoints(points) {
-    var output = "";
+    var output = "\\vspace{-1mm}\n\n";
     for (var i = 0; i < points.length; i++) {
         output += `- ${points[i]}\n`;
     }
