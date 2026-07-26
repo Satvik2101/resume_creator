@@ -75,16 +75,10 @@ function generateEducation(education) {
 function generateWorkExp(workexp) {
     var output = `## WORK EXPERIENCE\n\n---\n\n`;
     for (var i = 0; i < workexp.length; i++) {
-        var techstack = generateTechStack(workexp[i].techstack, (workexp[i].role.length < 40 && workexp[i].techstack.length > 4));
-        // var links = generateLinks(workexp[i].links);
         console.log(workexp[i].company, (workexp[i].role.length < 40 && workexp[i].techstack.length > 4))
         output += `### ***${workexp[i].role}***`
-        if (workexp[i].role.length > 40) {
-            output += `\n`;
-        } else {
-            output += `, `;
-        }
-        output += `**${workexp[i].company}, ${workexp[i].location}** ${techstack} \\Date{${workexp[i].start} - ${workexp[i].end} } \n\n`;
+        output += `, `;
+        output += `**${workexp[i].company}, ${workexp[i].location}** \\Date{${workexp[i].start} - ${workexp[i].end} } \n\n`;
         output += generatePoints(workexp[i].points);
         output += '\n';
     }
@@ -94,7 +88,6 @@ function generateWorkExp(workexp) {
 function generateProject(projects) {
     var output = `## PROJECTS\n\n---\n\n`;
     for (var i = 0; i < projects.length; i++) {
-        var techstack = generateTechStack(projects[i].techstack, projects[i].links?.length > 0);
         var links = generateLinks(projects[i].links);
         var name;
         if (projects[i].product == null) {
@@ -103,7 +96,7 @@ function generateProject(projects) {
             name = `${projects[i].name}'s ${projects[i].product}`;
         }
 
-        output += `### ***${name}*** ${links}${techstack}\n\n\\vspace{-1mm}\n\n`;
+        output += `### ***${name}*** ${links}\n\n\n`;
         output += generatePoints(projects[i].points);
         output += '\n';
     }

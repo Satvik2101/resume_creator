@@ -10,7 +10,7 @@
             "url": "https://www.satvikgupta.com"
         },
         {
-            "name": "Github",
+            "name": "GitHub",
             "url": "https://www.github.com/Satvik2101"
         },
         {
@@ -28,18 +28,6 @@
             "institute": "Delhi Technological University",
             "year": "2020 - 2024",
             "score": "9.48 GPA"
-        },
-        {
-            "name": "CBSE Class XII",
-            "institute": "",
-            "year": "2020",
-            "score": "95%"
-        },
-        {
-            "name": "CBSE Class X",
-            "institute": "",
-            "year": "2018",
-            "score": "96%"
         }
     ],
     "workexp": [
@@ -47,18 +35,17 @@
             "company": "Salesforce",
             "shortName": "Salesforce",
             "location": "Hyderabad",
-            "role": "Associate Member of Technical Staff -> Member of Technical Staff (Aug 2025)",
+            "role": "Member of Technical Staff (promoted August 2025)",
             "start": "June 2024",
             "end": "Present",
             "points": [
-                "Developed and engineered infrastructure, services, and applications for Salesforce Workspaces — zero-setup cloud dev environments.",
-                "Drove migration from EC2 instances to K8s-based pods and Spring-based Control Plane to K8s-based controllers",
-                "Designed K8s CRDs and wrote custom reconcilers and controllers for them, using Kubebuilder.",
-                "Standardized provisioning of dataplane resources using Terraform, reducing human error.",
-                "Created dev container features for metrics reporting, periodic maintenance via S6, for better customer experience.",
-                "Reduced Workspace provisioning time from ~18 minutes to 10 minutes (44% improvement)",
-                "Enabled Cursor for 2200 developers, via secure SSH access to Workspaces via opkssh.",
-                "Removed tech debt, pruned dead code, refactored legacy code."
+                "Built platform, control-plane, and application components for Salesforce Workspaces, used by 5,000+ engineers.",
+                "Developed the next-generation Kubernetes platform for Workspaces using Kubebuilder, improving reliability and disaster recovery.",
+                "Built an OpenTelemetry-based disk monitoring system, reducing disk-space support issues by 80%. Made an open source contribution to the gdu project",
+                "Reduced Workspace provisioning time from 18 minutes to 7 minutes (61% improvement)",
+                "Migrated manually provisioned resources to Terraform to provision complete dataplane infrastructure, including networking, IAM, DNS, and storage resources.",
+                "Agentic enablements - enabled Cursor for 3000+ developers, via secure SSH access to Workspaces via opkssh. Created a CLI and Claude plugin to enable agentic workflows for Workspaces.",
+                "Scoped and architected an LLM-powered support assistant for Workspaces, mentoring an intern through implementation."
             ],
             "techstack": [
                 "AWS",
@@ -77,9 +64,9 @@
             "start": "May 2023",
             "end": "July 2023",
             "points": [
-                "Designed and developed a notification system for cloud-based development Workspaces.",
+                "Designed and developed a notification system for Salesforce Workspaces.",
                 "Enabled terminal-triggered alerts using Go CLI, Spring Boot and Slack SDK",
-                "Prototyped reliable scheduling with Temporal workflows."
+                "Prototyped reliable scheduling with Temporal workflows, ensuring that notifications are (eventually) sent even if the service is down or the server is restarted."
             ],
             "techstack": [
                 "Spring Boot",
@@ -87,30 +74,6 @@
                 "Temporal"
             ],
             "hue-degree": 15
-        },
-        {
-            "company": "Coding Ninjas",
-            "shortName": "Coding Ninjas",
-            "location": "Delhi",
-            "role": "Technical Content Writer Intern",
-            "start": "Sept 2022",
-            "end": "Dec 2022",
-            "points": [
-                "Wrote 30+ technical guides on AWS, Puppet, Cryptography,etc. ",
-                "Explained complex tools through hands-on walkthroughs."
-            ],
-            "techstack": [
-                "AWS",
-                "DSA",
-                "Puppet"
-            ],
-            "links": [
-                {
-                    "name": "List of Articles",
-                    "url": "https://www.satvikgupta.com/coding-ninjas-articles.pdf"
-                }
-            ],
-            "hue-degree": 185
         },
         {
             "company": "CRIS, Ministry of Railways",
@@ -123,13 +86,43 @@
             "start": "Aug 2021",
             "end": "Oct 2021",
             "points": [
-                "Kicked off design revamp adopted app-wide. Architected bilingual (Eng/Hindi) support with future-proof i18n.",
-                "Upgraded Flutter → 40% faster builds, 30% faster launch."
+                "Advocated for, and implemented, a Flutter version upgrade from 1.x → 2.0, enabling null-safety and improved performance. (40% faster builds, 30% faster startup time).",
+                "Architected bilingual (Eng/Hindi) support with future-proof i18n across all major screens"
             ],
             "hue-degree": 40
         }
     ],
     "projects": [
+        {
+            "name": "TEDxDTU",
+            "product": "Website & App",
+            "role": "Head of Tech Team",
+            "techstack": [
+                "Flutter",
+                "Firebase Auth",
+                "Firestore",
+                "MongoDB",
+                "Mongoose",
+                "AWS",
+                "GCP"
+            ],
+            "start": "Dec 2021",
+            "end": "Present",
+            "links": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/TEDxDTU"
+                }
+            ],
+            "points": [
+                "Led a team of four developers building the TEDxDTU website and Flutter application.",
+                "Designed the backend architecture, MongoDB schemas, Firebase Authentication integration, and core REST APIs.",
+                "Managed production infrastructure, migrating from EC2 to GCP under increasing traffic before later moving the website to Vercel.",
+                "Website served 8,000+ users in 20 days and handled the majority of ticket sales; the Flutter app was used by event staff for ticket scanning and attendee check-in"
+            ],
+            "image": "./images/projects/tedx.png",
+            "image_alt": "Screenshot of TEDxDTU's App and Website"
+        },
         {
             "name": "DTU-DCE Fraternity Forum",
             "product": "Flutter App",
@@ -150,20 +143,20 @@
                 }
             ],
             "points": [
-                "Led mobile dev for DTU-DCE Fraternity Forum using Flutter. Built a secure app with JWT auth + REST backend integration. Collaborated with the backend team to build an API spec, and with Forum President and Secretaries as stakeholders.",
-                "Launched on iOS + Android, with 100+ downloads and 5 star rating."
+                "Led a team of 3 to develop a mobile app for DTU-DCE Fraternity Forum using Flutter. Launched on iOS and Android.",
+                "Built a secure app with JWT auth + REST backend integration. Collaborated with the backend team to build an API spec."
             ],
             "image": "./images/projects/dtu_dce_frat.png",
             "image_alt": "Screenshot of the Forum's App"
         },
         {
-            "name": "Personal Website & Infra",
+            "name": "Lucid Static Site Engine & Personal Website",
             "techstack": [
                 "AWS",
                 "S3",
-                "Cloudfront",
-                "Github Actions",
-                "Typescript"
+                "CloudFront",
+                "GitHub Actions",
+                "TypeScript"
             ],
             "links": [
                 {
@@ -171,7 +164,7 @@
                     "url": "https://www.satvikgupta.com"
                 },
                 {
-                    "name": "Github",
+                    "name": "GitHub",
                     "url": "https://github.com/Satvik2101/Portfolio"
                 },
                 {
@@ -180,39 +173,9 @@
                 }
             ],
             "points": [
-                "Built a personal website using my own templating engine (Lucid).",
-                "Hosted the website on AWS S3, served via Cloudfront. Cloudflare handles DNS and ACM handles certificates.",
-                "Used Github Actions to deploy the website automatically on push to main branch.",
-                "Setup isolated staging and production environments, and CI/CD pipelines for both."
+                "Built Lucid, a TypeScript-based static site generator and templating engine powering my personal website.",
+                "Built CI/CD pipelines and deployed to AWS using S3, CloudFront, and GitHub Actions."
             ]
-        },
-        {
-            "name": "TEDxDTU",
-            "product": "Website & App",
-            "role": "Head of Tech Team",
-            "techstack": [
-                "Flutter",
-                "Firebase Auth",
-                "Firestore",
-                "MongoDB",
-                "Mongoose",
-                "AWS",
-                "GCP"
-            ],
-            "start": "Dec 2021",
-            "end": "Present",
-            "links": [
-                {
-                    "name": "Github",
-                    "url": "https://github.com/TEDxDTU"
-                }
-            ],
-            "points": [
-                "Designed and deployed backend infra: EC2, then moved to GCP. Used NGINX as a reverse proxy + Node.js backend, certbot + Let's Encrypt for SSL, moved to Vercel for serverless to reduce costs.",
-                "Developed and launched a cross-platform app (Flutter) + site (Next.js). 8k users in 20 days, 2/3rds of tickets sold online."
-            ],
-            "image": "./images/projects/tedx.png",
-            "image_alt": "Screenshot of TEDxDTU's App and Website"
         }
     ],
     "achievements": [
@@ -223,28 +186,27 @@
     ],
     "skills": [
         [
-            "Golang",
+            "Languages - ",
+            "Go",
             "Python",
             "Terraform",
-            "JavaScript/Typescript",
+            "JavaScript/TypeScript",
             "Java",
             "Bash"
         ],
         [
-            "AWS",
+            "Infrastructure - ",
             "Kubernetes",
+            "Terraform",
             "Docker",
-            "Kubebuilder",
+            "AWS",
+            "Kubebuilder"
+        ],
+        [
+            "Frameworks - ",
             "Spring Boot",
             "Node.js",
             "Flutter"
-        ],
-        [
-            "IaC",
-            "AI",
-            "CI/CD",
-            "Observability",
-            "TDD"
         ]
     ]
 }
